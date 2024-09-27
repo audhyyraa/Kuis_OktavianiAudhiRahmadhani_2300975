@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #b31eb3; /* Background berwarna ungu cerah */
+}
+
+#formMahasiswa {
+    background-color: #eb1aac; /* Latar belakang form */
+    padding: 40px 30px; /* Padding lebih seimbang */
+    border-radius: 10px; /* Sudut lebih bulat */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih halus */
+    width: 350px; /* Lebar form yang sedikit lebih besar */
+    transition: transform 0.3s ease; /* Animasi saat hover */
+}
+
+#formMahasiswa:hover {
+    transform: scale(1.02); /* Efek zoom saat hover */
+}
+
+h2 {
+    text-align: center;
+    color: white; /* Warna teks judul menjadi putih */
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 120px; /* Lebar label yang lebih besar untuk teks yang lebih panjang */
+    margin-right: 10px;
+    color: #ffffff; /* Warna label menjadi putih */
+}
+
+input[type="text"], select {
+    width: calc(100% - 130px); /* Penyesuaian lebar untuk label */
+    padding: 8px; /* Padding lebih besar untuk input */
+    border: 1px solid #ddd; /* Garis batas untuk input */
+    border-radius: 4px; /* Sudut input lebih bulat */
+    transition: border-color 0.3s; /* Animasi pada batas input */
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #4CAF50; /* Warna batas saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+.radio-label, .checkbox-label {
+    display: block;
+    margin-left: 130px; /* Penyesuaian margin untuk label radio/checkbox */
+    color: #ffffff; /* Warna label menjadi putih */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px; /* Padding lebih besar untuk tombol */
+    background-color: #4CAF50; /* Warna latar belakang tombol */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px; /* Ukuran font tombol lebih besar */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Animasi untuk tombol */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna saat hover */
+    transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+button:active {
+    transform: translateY(1px); /* Efek tekan saat tombol diklik */
+}
